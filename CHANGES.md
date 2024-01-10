@@ -1,3 +1,9 @@
+## 3.0.2-preview.1
+
+This is an experimental release meant to ease testing of use of server
+stubs for advanced users. It is not meant for public consumption.
+
+- Expose server stubs for advanced users
 
 ## 3.0.1
 
