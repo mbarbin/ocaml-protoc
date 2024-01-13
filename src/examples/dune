@@ -151,3 +151,25 @@
  (modules orgchart orgchart_ml)
  (package ocaml-protoc)
  (libraries pbrt))
+
+(rule
+ (targets build_server.ml build_server.mli)
+ (deps build_server.proto)
+ (action
+  (run ocaml-protoc --binary --pp --yojson --services --ml_out ./ %{deps})))
+
+(rule
+ (alias runtest)
+ (action
+  (diff build_server.ml.expected build_server.ml)))
+
+(rule
+ (alias runtest)
+ (action
+  (diff build_server.mli.expected build_server.mli)))
+
+(test
+ (name build_server)
+ (modules build_server) ; just check that it compiles
+ (package ocaml-protoc)
+ (libraries pbrt pbrt_yojson pbrt_services))
