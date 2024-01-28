@@ -6,8 +6,8 @@ maintainer: ["Maxime Ransan <maxime.ransan@gmail.com>" "Simon Cruanes"]
 authors: ["Maxime Ransan <maxime.ransan@gmail.com>" "Simon Cruanes"]
 license: "MIT"
 tags: ["protobuf" "encode" "decode"]
-homepage: "https://github.com/mransan/ocaml-protoc"
-bug-reports: "https://github.com/mransan/ocaml-protoc/issues"
+homepage: "https://github.com/mbarbin/ocaml-protoc"
+bug-reports: "https://github.com/mbarbin/ocaml-protoc/issues"
 depends: [
   "dune" {>= "2.2"}
   "stdlib-shims"
@@ -28,5 +28,5 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/mransan/ocaml-protoc.git"
+dev-repo: "git+https://github.com/mbarbin/ocaml-protoc.git"
 available: arch != "arm32" & arch != "x86_32" & arch != "ppc32" & arch != "ppc64"

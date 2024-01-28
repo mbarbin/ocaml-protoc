@@ -5,7 +5,7 @@
 
 (maintainers "Maxime Ransan <maxime.ransan@gmail.com>" "Simon Cruanes")
 (authors "Maxime Ransan <maxime.ransan@gmail.com>" "Simon Cruanes")
-(source (github mransan/ocaml-protoc))
+(source (github mbarbin/ocaml-protoc))
 (license MIT)
 
 (package
